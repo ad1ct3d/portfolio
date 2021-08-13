@@ -1,0 +1,59 @@
+@import 'palette';
+
+// index style
+body {
+    padding: 0;
+    margin: 0;
+    background-color: nth($colors, 1);
+    
+    h1 {
+        color: nth($colors, 4);
+    }
+    h2 {
+        color: nth($colors, 4);
+    }
+    h3 {
+        color: nth($colors, 4);
+    }
+    h4 {
+        color: nth($colors, 4);
+    }
+    p {
+        color: nth($colors, 4);
+    }
+}
+
+
+
+header {
+    min-height: 100vh;
+    text-align:left;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    .headerTitle_container {
+        padding-left: 40px;
+        padding-right: 40px;
+        max-width: 800px;
+        .headerTitle {
+            font-size: 60px;
+            font-family: 'Roboto Mono', monospace;
+        }
+        .headerSubtitle {
+            opacity: 0.6;
+            font-family: 'Roboto', sans-serif;
+            padding-left: 50px;
+            letter-spacing: 3px;
+        }
+        .contactBtn {
+            width: 150px;
+            height: 40px;
+            background-color: nth($colors, 1);
+            border-radius: 0;
+            border: 2px solid nth($colors, 2);
+            color: nth($colors, 3);
+            float: right;
+        }
+    }
+}
